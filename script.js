@@ -31,11 +31,11 @@ const layers = [
 const colors = [
   '#58b453',
   ,
-  '#D7191D',
-  '#f99d59',
-  '#ffedab',
-  '#ffedab',
-  '#58b453'
+  '#d7191c', 
+  '#fec981',
+  '#ebf7ad',
+  '#96d265',
+  '#1a9641' 
 ];
 
 // create legend
