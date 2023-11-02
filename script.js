@@ -21,21 +21,21 @@ map.fitBounds([
 // define layer names
 const layers = [
   'UG Sites (circles)',
-  '',  
-  'Lowest',
-  'Low',
-  'Moderate',
+  '',
+  'Highest',
   'High',
-  'Highest'
+  'Moderate',
+  'Low', 
+  'Lowest'
 ];
 const colors = [
   '#58b453',
   ,
-  '#58b453',
-  '#ffedab',
-  '#ffedab',
+  '#D7191D',
   '#f99d59',
-  '#D7191D'
+  '#ffedab',
+  '#ffedab',
+  '#58b453'
 ];
 
 // create legend
