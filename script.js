@@ -32,6 +32,7 @@ map.on('load', () => {
   const colors = [
     '#58b453',
     ,
+    ,
     '#D7191C',
     '#F99D59',
     '#FFEDAB',
