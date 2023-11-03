@@ -22,6 +22,7 @@ map.on('load', () => {
   const layers = [
     'Urban Growth sites',
     '',
+    'Green Infrastructure Need',
     'Highest',
     'High',
     'Moderate',
@@ -38,20 +39,32 @@ map.on('load', () => {
     '#E2F2C4'
   ];
 
+  // If this code is to be worked on more, we should lean more on html.
+  // For now, just adding a subheading with just javascript - v. hacky.
+
   // create legend
   const legend = document.getElementById('legend');
 
   layers.forEach((layer, i) => {
-    const color = colors[i];
-    const item = document.createElement('div');
-    const key = document.createElement('span');
-    key.className = 'legend-key';
-    key.style.backgroundColor = color;
+    if (layer !== 'Green Infrastructure Need') {
+      const color = colors[i];
+      const item = document.createElement('div');
+      const key = document.createElement('span');
+      key.className = 'legend-key';
+      key.style.backgroundColor = color;
 
-    const value = document.createElement('span');
-    value.innerHTML = `${layer}`;
-    item.appendChild(key);
-    item.appendChild(value);
-    legend.appendChild(item);
+      const value = document.createElement('span');
+      value.innerHTML = `${layer}`;
+      item.appendChild(key);
+      item.appendChild(value);
+      legend.appendChild(item);
+    }
+    if (layer === 'Green Infrastructure Need') {
+      const item = document.createElement('div');
+      item.innerHTML = `${layer}`;
+      item.style.fontWeight = 'bold';
+      item.style.marginBottom = '5px';
+      legend.appendChild(item);
+    }
   });
 });
