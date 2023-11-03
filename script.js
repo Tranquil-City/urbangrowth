@@ -35,7 +35,7 @@ const colors = [
   '#F99D59',
   '#FFEDAB',
   '#C4E687',
-  '#58B453' 
+  '#E2F2C4' 
 ];
 
 // create legend
