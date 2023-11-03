@@ -30,7 +30,7 @@ map.on('load', () => {
     'Lowest'
   ];
   const colors = [
-    '#58b453',
+    '#2B7BE3',
     ,
     ,
     '#D7191C',
