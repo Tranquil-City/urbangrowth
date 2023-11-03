@@ -2,22 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Urban Growth & Tranquil City: Green Infrastructure Priority Map</title>
+    <title>
+      Urban Growth & Tranquil City: Green Infrastructure Priority Map
+    </title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
-    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-  
+    <link
+      href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="map"></div>
     <div class="map-overlay" id="features">
-      <h2>Urban Growth & Tranquil City: <br> Green Infrastructure Priority Map</h2>
-      <div id="pd"><p>A map that highlights where greening interventions are most needed!</p></div>
+      <h2>
+        Urban Growth & Tranquil City: <br />
+        Green Infrastructure Priority Map
+      </h2>
+      <div id="pd">
+        <p>
+          A map that highlights where greening interventions are most needed!
+        </p>
+        <div id="methodology" style="display: none">
+          <p>
+            Prioritisation is based on a combination of population density,
+            health deprivation and access to high quality green areas (via the
+            Tranquil City Index). This data has been derived using DEFRA, DfT,
+            GLA, TfL, ONS, OSM and Curio (Breadboard Labs Limited) data.
+          </p>
+          <p>
+            Contains public sector information licensed under the Open
+            Government Licence v3.0.
+          </p>
+          <p>
+            © Tranquil City Ltd 2023. Site location data courtesy of Urban
+            Growth Learning Gardens CIC.
+          </p>
+        </div>
+        <p>
+          <button id="methodology-button" onclick="toggleMethodology()">
+            Show Methodology
+          </button>
+        </p>
+      </div>
     </div>
     <div class="map-overlay" id="legend"></div>
 
     <script src="script.js" type="text/javascript"></script>
-
   </body>
 </html>

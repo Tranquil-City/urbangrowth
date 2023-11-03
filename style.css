@@ -30,7 +30,7 @@ p {
 }
 #features {
   top: 0;
-  height: 100px;
+  height: fit-content;
   margin-top: 20px;
   width: 300px;
 }
@@ -39,6 +39,21 @@ p {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   line-height: 18px;
   margin-bottom: 40px;
+}
+#methodology,
+#methodology-button {
+  font-size: 85%;
+}
+/* Remove button styles */
+#methodology-button {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  text-decoration: underline;
+  border-radius: 0;
+  cursor: pointer;
 }
 .legend-key {
   display: inline-block;

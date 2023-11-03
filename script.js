@@ -69,3 +69,15 @@ map.on('load', () => {
     }
   });
 });
+
+function toggleMethodology() {
+  const methodology = document.getElementById('methodology');
+  const methodologyButton = document.getElementById('methodology-button');
+  if (methodology.style.display === 'none') {
+    methodology.style.display = 'block';
+    methodologyButton.innerHTML = 'Hide Methodology';
+  } else {
+    methodology.style.display = 'none';
+    methodologyButton.innerHTML = 'Show Methodology';
+  }
+}
